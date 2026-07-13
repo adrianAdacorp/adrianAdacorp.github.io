@@ -1,0 +1,60 @@
+.caso { max-width: 760px; }
+
+.volver {
+  display: inline-block;
+  margin-bottom: 32px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.caso-header { margin-bottom: 40px; }
+
+.badge-arq {
+  background: var(--accent);
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.caso-header h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  margin: 8px 0;
+}
+
+.caso section {
+  margin-bottom: 40px;
+}
+
+.caso section h2 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+
+.caso section p {
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.caso section img {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+}
+
+.repo-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 0.9rem;
+}
