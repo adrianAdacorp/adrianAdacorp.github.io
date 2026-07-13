@@ -155,12 +155,19 @@ header p {
   margin-top: auto;
 }
 
-.card a::after {
-  content: '→';
+.card a svg {
   color: var(--accent);
+  flex-shrink: 0;
   transition: transform 0.2s ease;
 }
 
-.card a:hover::after {
+.card a:hover svg {
   transform: translateX(4px);
+}
+
+/* Accesibilidad: foco visible con teclado (Tab), no solo hover */
+.card a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  border-radius: 2px;
 }
