@@ -12,7 +12,7 @@
     "tipo": "Arquitectura de Datos",
     "descripcion": "Modelo estrella + ETL con Python desde dataset crudo de Kaggle",
     "tags": ["Python", "SQL", "Medallion"],
-    "url": "proyectos/etl-ventas-retail.html",
+    "url": "proyectos/plantilla-caso.html",
     "thumbnail": "assets/img/etl-ventas-retail.png"
   }
 ]
