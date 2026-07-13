@@ -9,6 +9,9 @@
   --line: #D9D7D0;
 }
 
+.badge-arq { background: var(--accent); }
+/* En app.js, genera la clase dinámica: */
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
