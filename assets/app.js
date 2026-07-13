@@ -1,17 +1,23 @@
-// assets/app.js
 // Carga los proyectos desde el JSON y genera las tarjetas dinámicamente.
 // Para agregar un proyecto nuevo: solo edita data/projects.json, no este archivo.
 
 fetch('data/projects.json')
-  .then(res => res.json())
+  .then(res => {
+    if (!res.ok) throw new Error(`No se pudo cargar projects.json (status ${res.status})`);
+    return res.json();
+  })
   .then(proyectos => {
     const contenedor = document.getElementById('lista-proyectos');
+
+    if (!proyectos.length) {
+      contenedor.innerHTML = '<p style="color:var(--muted)">Aún no hay proyectos cargados.</p>';
+      return;
+    }
 
     proyectos.forEach(p => {
       const card = document.createElement('div');
       card.className = 'card';
 
-      // Badge con color distinto según el tipo de proyecto
       const badgeClase = p.tipo === 'Arquitectura de Datos' ? 'badge badge-arq' : 'badge';
 
       card.innerHTML = `
@@ -30,4 +36,8 @@ fetch('data/projects.json')
       contenedor.appendChild(card);
     });
   })
-  .catch(err => console.error('Error cargando proyectos:', err));
+  .catch(err => {
+    console.error('Error cargando proyectos:', err);
+    document.getElementById('lista-proyectos').innerHTML =
+      `<p style="color:red">Error: ${err.message}. Revisa que data/projects.json exista.</p>`;
+  });
