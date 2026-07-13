@@ -4,23 +4,15 @@
     "tipo": "Power BI",
     "descripcion": "Análisis de ventas por región y categoría",
     "tags": ["DAX", "Power Query", "Modelo Estrella"],
-    "url": "Tu-Link",
+    "url": "https://app.powerbi.com/view?r=TU_LINK",
     "thumbnail": "assets/img/dashboard1.png"
   },
   {
-    "titulo": "Onboarding RRHH",
-    "tipo": "Bizagi",
-    "descripcion": "Proceso genérico de incorporación de personal",
-    "tags": ["BPMN", "Multi-pool"],
-    "url": "procesos/proceso1.pdf",
-    "thumbnail": "assets/img/proceso1.png"
-  }
-  {
-  "titulo": "Pipeline ETL: Ventas Retail Multi-región",
-  "tipo": "Arquitectura de Datos",
-  "descripcion": "Modelo estrella + ETL con Python desde dataset crudo de Kaggle",
-  "tags": ["Python", "SQL", "Medallion"],
-  "url": "proyectos/etl-ventas-retail.html",
-  "thumbnail": "assets/img/etl-ventas-retail.png"
+    "titulo": "Pipeline ETL: Ventas Retail Multi-región",
+    "tipo": "Arquitectura de Datos",
+    "descripcion": "Modelo estrella + ETL con Python desde dataset crudo de Kaggle",
+    "tags": ["Python", "SQL", "Medallion"],
+    "url": "proyectos/etl-ventas-retail.html",
+    "thumbnail": "assets/img/etl-ventas-retail.png"
   }
 ]
